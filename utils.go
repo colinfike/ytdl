@@ -33,7 +33,7 @@ func httpGet(url string) (*http.Response, error) {
 }
 
 func httpGetAndCheckResponse(url string) (*http.Response, error) {
-	log.Debug().Msgf("Fetching %v", url)
+// 	log.Debug().Msgf("Fetching %v", url)
 
 	resp, err := httpGet(url)
 	if err != nil {
